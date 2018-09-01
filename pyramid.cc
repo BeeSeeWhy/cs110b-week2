@@ -10,15 +10,15 @@ int numOfSteps ()
     int steps;
     do
     {
-        cout << "How many steps?: " << endl;
-        cout << "1. 1 Step " << endl;
-        cout << "2. 2 Steps " << endl;
-        cout << "3. 3 Steps " << endl;
-        cout << "4. 4 Steps " << endl;
-        cout << "5. 5 Steps " << endl;
-        cout << "6. 6 Steps " << endl;
-        cout << "7. 7 Steps " << endl;
-        cout << "8. Exit " << endl;
+        cout << "How many steps?:" << endl;
+        cout << "1. 1 Step" << endl;
+        cout << "2. 2 Steps" << endl;
+        cout << "3. 3 Steps" << endl;
+        cout << "4. 4 Steps" << endl;
+        cout << "5. 5 Steps" << endl;
+        cout << "6. 6 Steps" << endl;
+        cout << "7. 7 Steps" << endl;
+        cout << "8. Exit" << endl;
         cin >> steps;
         
         if (steps == max)
