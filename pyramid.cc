@@ -1,7 +1,9 @@
-else#include <cmath>
+#include <cmath>
 #include <iomanip>
 #include <iostream>
 using namespace std;
+
+int max = 8;
 
 int numOfSteps ()
 {
@@ -19,12 +21,12 @@ int numOfSteps ()
         cout << "8. Exit " << endl;
         cin >> steps;
         
-        if (steps == 8)
+        if (steps == max)
         {
             break;
         }
         
-    } while (steps < 1 || steps > 8);
+    } while (steps < 1 || steps > max);
     
     return steps;
 }
@@ -33,7 +35,7 @@ int main ()
 {
     
     int steps = numOfSteps();
-    if (steps == 8)
+    if (steps == max)
     {
         return 0;
     }
