@@ -1,4 +1,4 @@
-#include <cmath>
+else#include <cmath>
 #include <iomanip>
 #include <iostream>
 using namespace std;
@@ -37,7 +37,7 @@ int main ()
     {
         return 0;
     }
-    if (steps > 0 || steps < 8)
+    else
     {
       double ones = 1;
       for (int i = 1, space = steps + 1; i <= steps;i++, space++)
