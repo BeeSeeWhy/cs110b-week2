@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-int max = 8;
+int num = 8;
 
 int numOfSteps ()
 {
@@ -21,12 +21,12 @@ int numOfSteps ()
         cout << "8. Exit" << endl;
         cin >> steps;
         
-        if (steps == max)
+        if (steps == num)
         {
             break;
         }
         
-    } while (steps < 1 || steps > max);
+    } while (steps < 1 || steps > num);
     
     return steps;
 }
@@ -35,7 +35,7 @@ int main ()
 {
     
     int steps = numOfSteps();
-    if (steps == max)
+    if (steps == num)
     {
         return 0;
     }
