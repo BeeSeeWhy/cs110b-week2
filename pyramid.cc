@@ -3,9 +3,9 @@
 #include <iostream>
 using namespace std;
 
-int num = 8;
+int num = 8;  //sets globally highest number used for options steps list
 
-int numOfSteps ()
+int getNumOfSteps () //function ask number of steps to display or exit
 {
     int steps;
     do
@@ -26,7 +26,7 @@ int numOfSteps ()
             break;
         }
         
-    } while (steps < 1 || steps > num);
+    } while (steps < 1 || steps > num); //tests for number in requested range, if not continues asking for number
     
     return steps;
 }
@@ -34,12 +34,12 @@ int numOfSteps ()
 int main ()
 {
     
-    int steps = numOfSteps();
-    if (steps == num)
+    int steps = getNumOfSteps(); //calls function and sets variable for return 
+    if (steps == num) //if user chose exit, exits program
     {
         return 0;
     }
-    else
+    else 
     {
       double ones = 1;
       for (int i = 1, space = steps + 1; i <= steps;i++, space++)
